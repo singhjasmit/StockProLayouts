@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:padding="30dp"
+    >
+    <TextView
+        android:id="@+id/title"
+        style="@style/myTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/manage_portfolio"/>
+
+    <RelativeLayout
+        android:id="@+id/data_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:padding="10dp"
+        android:paddingBottom="20dp"
+       >
+
+
+        <EditText
+            android:id="@+id/txt_symbol"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorWhite"
+            android:hint="@string/hint_symbol"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/txt_qty"
+            android:layout_width="75sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/txt_symbol"
+            android:background="@color/colorWhite"
+            android:hint="@string/hint_qty"
+            android:padding="10dp"/>
+
+        <Button
+
+            android:id="@+id/button"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/colorGreen"
+            android:text="@string/add"
+            android:textAllCaps="false"
+
+            android:textColor="@color/colorWhite"
+
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/row_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/data_row"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/row_1_qty"
+            style="@style/myNormalText"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/amazon_qty"
+           />
+        <TextView
+            android:id="@+id/row_1_price"
+            style="@style/myNormalText"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/row_1_qty"
+            android:text="@string/amazon_price"/>
+        <TextView
+            android:id="@+id/row_1_change"
+            style="@style/myChangeUpText"
+            android:layout_toRightOf="@id/row_1_price"
+            android:text="@string/amazon_change"/>
+
+        <Button
+
+            android:id="@+id/row_1_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:background="@color/colorGreen"
+            android:text="@string/del"
+            android:textColor="@color/colorWhite"
+
+            />
+
+        <TextView
+            android:id="@+id/row_1_name"
+            style="@style/myNormalText"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/row_1_qty"
+            android:layout_marginRight="10dp"
+            android:text="@string/amazon_name"/>
+        <TextView
+            android:id="@+id/row_1_value"
+            style="@style/myNormalText"
+            android:layout_below="@id/row_1_qty"
+            android:layout_toRightOf="@id/row_1_name"
+            android:text="@string/amazon_value"/>
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+
+            android:layout_below="@id/row_1_button"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimaryDark"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/row_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row_1"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/row_2_qty"
+            style="@style/myNormalText"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/microsoft_qty"/>
+        <TextView
+            android:id="@+id/row_2_price"
+            style="@style/myNormalText"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/row_2_qty"
+            android:text="@string/microsoft_price"/>
+        <TextView
+            android:id="@+id/row_2_change"
+            style="@style/myChangeDownText"
+            android:layout_toRightOf="@id/row_2_price"
+            android:text="@string/microsoft_change"/>
+
+        <Button
+
+            android:id="@+id/row_2_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorGreen"
+            android:text="@string/del"
+            android:textColor="@color/colorWhite"
+
+            />
+
+        <TextView
+            android:id="@+id/row_2_name"
+            style="@style/myNormalText"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/row_2_qty"
+            android:layout_marginRight="10dp"
+            android:text="@string/microsoft_name"/>
+        <TextView
+            android:id="@+id/row_2_value"
+            style="@style/myNormalText"
+            android:layout_below="@id/row_2_qty"
+            android:layout_toRightOf="@id/row_2_name"
+            android:text="@string/microsoft_value"/>
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+
+            android:layout_below="@id/row_2_button"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimaryDark"
+            />
+
+
+    </RelativeLayout>
+
+
+    <Button
+
+        android:id="@+id/btn_refresh"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorGreen"
+        android:text="@string/refresh"
+        android:textAllCaps="false"
+
+        android:textColor="@color/colorWhite"
+
+        />
+
+</RelativeLayout>

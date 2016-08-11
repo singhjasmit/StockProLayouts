@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:padding="40dp"
+    >
+
+    <Button
+        android:id="@+id/btnFetchQuote"
+        style="@style/myButtonLarge"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="1"
+        android:background="@color/colorOrange"
+        android:text="@string/fetch_quote"
+        />
+
+    <Button
+        android:id="@+id/btnPortfolio"
+        style="@style/myButtonLarge"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="1"
+        android:background="@color/colorGreen"
+        android:text="@string/manage_portfolio"
+
+        />
+
+    <Button
+        android:id="@+id/btnSetting"
+        style="@style/myButtonLarge"
+        android:layout_weight="1"
+        android:background="@color/colorSetting"
+        android:text="@string/settings"
+        />
+
+</LinearLayout>
